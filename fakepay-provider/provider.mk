@@ -30,7 +30,7 @@ NAME ?= $(PROJECT)
 
 WASH ?= wash
 
-oci_url_base ?= serverofmyself:5000 # modify to your oci url
+oci_url_base ?= serverofmyself:5000# modify to your oci url
 oci_url      ?= $(oci_url_base)/$(bin_name):$(VERSION)
 ifeq ($(WASH_REG_USER),)
 	oci_insecure := --insecure
