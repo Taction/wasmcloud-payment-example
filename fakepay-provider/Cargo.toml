@@ -1,0 +1,15 @@
+[package]
+name = "wasmcloud-example-provider-fakepay"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+async-trait = "0.1"
+log = "0.4"
+wasmbus-rpc = { version = "0.9", features = ["otel"]}
+wasmcloud-examples-payments = { path="../payments/rust" }
+
+[[bin]]
+name = "fakepay_provider"
+path = "src/main.rs"
